@@ -1,0 +1,4 @@
+//test
+@function col-width($col-items){
+	@return  $col-items * 100%  / 12;
+};
