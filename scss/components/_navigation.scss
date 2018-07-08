@@ -1,0 +1,11 @@
+.nav {
+	text-align: center;
+
+	&__item {
+		display: block;
+		width: 100%;
+		@include mq(medium) {
+			display: inline-block;
+		}
+	}
+}

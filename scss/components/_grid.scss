@@ -3,49 +3,43 @@
 * === Grid ===
 */
 
+.container{
+	margin: 0 10%;
+}
 
-.grid{
-	&__row {
-		@include flexbox;
-		}
-	
-	&__col  {		
-					&--1 {
-					width: col-width(1);	
-					}
-					&--2 {
-					width: col-width(2);	
-					}
-					&--3 {
-					width: col-width(3);	
-					}
-					&--4 {
-					width: col-width(4);		
-					}
-					&--5 {
-					width: col-width(5);		
-					}
-					&--6 {
-					width: col-width(6);		
-					}
-					&--7 {
-					width: col-width(7);		
-					}
-					&--8 {
-					width: col-width(8);		
-					}
-					&--9 {
-					width: col-width(9);		
-					}
-					&--10 {
-					width: col-width(10);		
-					}
-					&--11 {
-					width: col-width(11);		
-					}
-					&--12 {
-					width: col-width(12);		
-					}
-	
+.grid__row {
+	@include flex;
+	@include mq(medium){
+		@include flex(row);
 	}
-}		
+}
+.grid__col {
+  @include mq(medium) {
+    @include g-columns;
+  }
+
+}
+
+// Adjacent sibling margins
+
+@mixin doubly($margin: 1em) {
+	& + & {
+	  margin-left: $margin;
+    @content;
+	}
+}
+// Column styles
+
+[class^="grid__col--"] {
+  @include mq(small)  {
+    margin-top: em(12px);
+    margin-bottom: em(12px);
+  }
+  @include mq(medium) {
+    @include doubly(percentage($g-gutter-width / $context));    
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    }
+  }

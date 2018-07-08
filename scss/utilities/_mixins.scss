@@ -1,5 +1,52 @@
-@mixin flexbox {
+
+/*
+* === Mixins ===
+*/
+
+//Flexbox Mixins
+
+@mixin flex($flex-direction: column) {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: flex-start;
+	flex-direction: $flex-direction;
+	align-items: center;
 }
+
+//Media Query Mixin
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+   @else {
+   	@error "No value could be retrieved for `#{$break}`. "
+  }
+}
+
+
+
+//Column Width Calulator
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+    $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;  
+    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+    
+    // Generate column modifier classes
+    &--#{$i} {
+      width: percentage($target / $context);
+
+    }
+  }
+}     

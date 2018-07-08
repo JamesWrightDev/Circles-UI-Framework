@@ -1,4 +1,9 @@
-//test
-@function col-width($col-items){
-	@return  $col-items * 100%  / 12;
-};
+@function em($target, $context: $font-size-default) {
+	@return ($target / $context) * 1em;
+}
+
+
+@function g-context($g-col-width, $g-col-count ,$g-gutter-width) {
+  $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
+  @return $g-context;
+}

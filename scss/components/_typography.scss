@@ -1,0 +1,33 @@
+.headline--primary {
+font-size: em(32px);
+font-weight: $font-bold;
+color: $col-primary;
+line-height: 1.2;
+}
+
+.headline--secondary {
+	font-size: em(16px);
+	font-weight: $font-thin;
+
+}
+
+.blockquote {
+	font-size: em(24px);
+	font-style: italic;
+	line-height: 1.4;
+	font-weight: $font-regular;
+	border-left: solid 10px $col-primary;
+	border-radius: 5px;
+	padding-left: 20px;
+
+
+}
+
+
+.form__label{
+
+	&--hidden{
+		display: none;
+	}
+}
+
