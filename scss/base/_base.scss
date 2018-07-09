@@ -1,5 +1,7 @@
 *{
 box-sizing:border-box;
+font-family: $font-serif;
+
 }
 
 body{
@@ -17,8 +19,7 @@ li {
 
 
 
-h1, h2, h4, p, *{
-	font-family: $font-serif;
+p,{
 	color: $col-font;
 	font-size: $font-size-default;
 	line-height: $font-line-height;
@@ -27,7 +28,7 @@ h1, h2, h4, p, *{
 
 }
 
-a {
+.link {
 	color: $col-secondary;
 	text-decoration: none;
 	font-weight: $font-bold;

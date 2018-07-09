@@ -42,6 +42,7 @@
 
 [class^="grid__col--"] {
   font-weight: $font-medium;
+  color: $col-font;
 
   @include mq(small)  {
     margin-top: em(12px);
