@@ -172,7 +172,7 @@ button[class^='btn'] {
   font-weight: 700;
   color: #58e1c1;
   line-height: 1.2;
-  margin: 1em 0; }
+  margin: 1em 0 1em 1em; }
 
 .headline--secondary {
   font-size: 1em;

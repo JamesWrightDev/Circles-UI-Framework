@@ -1,3 +1,6 @@
+//Functions
+
+// NOTE: (Made during the Sass Basics course)
 @function em($target, $context: $font-size-default) {
 	@return ($target / $context) * 1em;
 }

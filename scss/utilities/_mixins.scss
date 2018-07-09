@@ -12,7 +12,8 @@
 	align-items: flex-start;
 }
 
-//Media Query Mixin
+//Media Query Mixin 
+// NOTE: (Made during the Sass Basics course)
 
 @mixin mq($break) {
   @if $break == "small" {
