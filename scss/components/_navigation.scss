@@ -1,11 +1,24 @@
 .nav {
 	text-align: center;
+	@include mq(medium) {
+		@include flex(row, center);
+
+	}
 
 	&__item {
 		display: block;
-		width: 100%;
+
+		padding: 10px 0;
+
+			
 		@include mq(medium) {
-			display: inline-block;
+			display: inline;
+			padding: 10px 20px;
+		}
+		&:hover {
+			@include btn(10px 20px);
+			color: $col-white;
+			background-color: $col-primary;
 		}
 	}
 }

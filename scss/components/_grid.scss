@@ -8,6 +8,7 @@
 }
 
 .grid__row {
+  margin: 1em 0;
 	@include flex;
 	@include mq(medium){
 		@include flex(row);
@@ -19,6 +20,23 @@
   }
 
 }
+
+.centered{
+  @include mq(medium){
+  max-width: 100%;
+  margin: 0 auto;
+ }
+}
+
+.grid__col--12 {
+  @include mq(small){
+  }
+
+  @include mq(medium){
+  @include flex(row);
+}
+}
+
 
 // Adjacent sibling margins
 
@@ -34,6 +52,8 @@
   @include mq(small)  {
     margin-top: em(12px);
     margin-bottom: em(12px);
+    width: 100%;
+
   }
   @include mq(medium) {
     @include doubly(percentage($g-gutter-width / $context));    

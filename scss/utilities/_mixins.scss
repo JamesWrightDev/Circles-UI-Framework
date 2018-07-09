@@ -5,11 +5,11 @@
 
 //Flexbox Mixins
 
-@mixin flex($flex-direction: column) {
+@mixin flex($flex-direction: column, $justify-content: space-between) {
 	display: flex;
-	justify-content: space-between;
+	justify-content: $justify-content;
 	flex-direction: $flex-direction;
-	align-items: center;
+	align-items: flex-start;
 }
 
 //Media Query Mixin
@@ -49,4 +49,15 @@
 
     }
   }
-}     
+}  
+
+
+
+
+@mixin btn($padding: 15px 0px){
+  border: none;
+  padding: $padding;
+  border-radius: 5px;
+ 
+  
+}

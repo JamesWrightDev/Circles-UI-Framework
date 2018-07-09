@@ -1,4 +1,7 @@
-//temp
+*{
+box-sizing:border-box;
+}
+
 body{
 	display: flex;
 	flex-direction: column;
@@ -20,6 +23,7 @@ h1, h2, h4, p, *{
 	font-size: $font-size-default;
 	line-height: $font-line-height;
 	font-weight: $font-light;
+	margin: 0;
 
 }
 
@@ -28,3 +32,4 @@ a {
 	text-decoration: none;
 	font-weight: $font-bold;
 }
+
