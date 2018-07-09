@@ -7,13 +7,14 @@
 
 	&__item {
 		display: block;
-
 		padding: 10px 0;
 
 			
 		@include mq(medium) {
 			display: inline;
 			padding: 10px 20px;
+			
+			text-align: center;
 		}
 		&:hover {
 			@include btn(10px 20px);

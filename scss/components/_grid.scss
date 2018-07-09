@@ -8,7 +8,7 @@
 }
 
 .grid__row {
-  margin: 1em 0;
+  margin: 1.5em 0;
 	@include flex;
 	@include mq(medium){
 		@include flex(row);
@@ -28,14 +28,6 @@
  }
 }
 
-.grid__col--12 {
-  @include mq(small){
-  }
-
-  @include mq(medium){
-  @include flex(row);
-}
-}
 
 
 // Adjacent sibling margins
@@ -49,10 +41,13 @@
 // Column styles
 
 [class^="grid__col--"] {
+  font-weight: $font-medium;
+
   @include mq(small)  {
     margin-top: em(12px);
     margin-bottom: em(12px);
     width: 100%;
+    
 
   }
   @include mq(medium) {
@@ -60,6 +55,7 @@
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
-    
+    @include flex(row, center);
+  
     }
   }

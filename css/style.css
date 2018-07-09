@@ -12,7 +12,7 @@
   margin: 0 10%; }
 
 .grid__row {
-  margin: 1em 0;
+  margin: 1.5em 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -55,25 +55,24 @@
     max-width: 100%;
     margin: 0 auto; } }
 
-@media (min-width: 768px) {
-  .grid__col--12 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-start; } }
-
-@media (min-width: 1px) and (max-width: 768px) {
-  [class^="grid__col--"] {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
-    width: 100%; } }
-@media (min-width: 768px) {
-  [class^="grid__col--"] {
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    [class^="grid__col--"] + [class^="grid__col--"] {
-      margin-left: 2%; } }
+[class^="grid__col--"] {
+  font-weight: 500; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    [class^="grid__col--"] {
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
+      width: 100%; } }
+  @media (min-width: 768px) {
+    [class^="grid__col--"] {
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: flex-start; }
+      [class^="grid__col--"] + [class^="grid__col--"] {
+        margin-left: 2%; } }
 
 .form {
   text-alight: left; }
@@ -159,7 +158,8 @@ button[class^='btn'] {
     @media (min-width: 768px) {
       .nav__item {
         display: inline;
-        padding: 10px 20px; } }
+        padding: 10px 20px;
+        text-align: center; } }
     .nav__item:hover {
       border: none;
       padding: 10px 20px;
