@@ -8,8 +8,11 @@
 
 //Fonts Var
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px');
+
 
 $font-serif: 'Roboto', sans-serif, Helvetica, Arial, "Lucida Grande", sans-serif; 
+$font-slabo: 'Slabo 13px', serif;
 $font-size-default: 16px;
 $font-line-height: 1.8;
 
@@ -32,7 +35,7 @@ $col-success 	: #63cc82;
 $col-error   	: #e4757a;
 $col-warn    	: #fd7856;
 $col-info    	: #927bc1;
-
+$col-danger: #F00;
 //Grid
 $col--12: #80e8d1;
 $col--8 : #fd9f85;

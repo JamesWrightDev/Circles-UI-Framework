@@ -1,18 +1,36 @@
 //Typography
 
 .headline--primary {
-font-size: em(32px);
+font-size: 6vw;
 font-weight: $font-bold;
-color: $col-primary;
+padding: 0.5em;
 line-height: 1.2;
-margin: 1em 0 1em 1em;
 font-family: $font-serif;
+margin: auto;
+display: block;
+justify-content: center;
+width: auto;
+
+
+@include mq(medium){
+	font-size: 2em;
+}
+}
+
+.headline {
+	font-family: 'Slabo 13px', serif;
+	margin-top: 3em;
+	font-size: 9vw;
+	@include mq(medium){
+	font-size: 3em;;
+	}
 
 }
 
+
 .headline--secondary {
 	font-size: em(18px);
-	font-weight: $font-thin;
+	font-weight: $font-regular;
 	margin: 1em 0;
 	font-family: $font-serif;
 	color: $col-font;
