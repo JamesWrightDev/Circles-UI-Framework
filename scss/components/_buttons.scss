@@ -19,25 +19,6 @@ button[class^='btn'] {
 
 
 .theme__colors {
-	&.warn--low{
-	border-bottom: solid 8px $col-primary;
-	color: $col-primary;
-	
-	}
-	&.warn--moderate{
-		border-bottom: solid 8px $col-warn;
-		color: $col-warn;
-	}
-	&.warn--high{
-		border-bottom: solid 8px  $col-error;
-		color: $col-error;
-	}
-	&.warn--veryhigh{
-		border-bottom: solid 8px $col-danger;
-		color: $col-danger;
-	}
-	
-
 	&.btn--default{
 		background-color: $col-primary;
 	}
@@ -53,7 +34,6 @@ button[class^='btn'] {
 	&.btn--info{
 		background-color: $col-info;
 	}
-
 
 	&.grid__col--12{
 		background-color: $col--12;

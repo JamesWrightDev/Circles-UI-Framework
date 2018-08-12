@@ -55,12 +55,10 @@
 
 
 
-@mixin btn($padding: 0px 0px){
+@mixin btn($padding: 15px 0px){
   border: none;
   padding: $padding;
-  border-radius: 10%;
-  overflow:hidden;
-  width: 50%;
+  border-radius: 5px;
  
   
 }
