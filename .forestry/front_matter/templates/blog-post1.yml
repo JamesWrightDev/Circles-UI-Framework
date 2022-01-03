@@ -1,4 +1,9 @@
 ---
 label: Blog Post1
 hide_body: false
-fields: []
+fields:
+- name: ddddd
+  type: text
+  config:
+    required: false
+  label: ddddd
