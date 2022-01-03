@@ -8,4 +8,5 @@ fields:
     required: false
   label: Test
 pages:
+- pages/fool.md.md
 - pages/test.md
