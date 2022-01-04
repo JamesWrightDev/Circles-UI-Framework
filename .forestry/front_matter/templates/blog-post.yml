@@ -7,6 +7,21 @@ fields:
   config:
     required: false
   label: Test
+- name: tags
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - '1'
+    - '2'
+    - '3'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: tags
 pages:
 - pages/fool.md.md
 - pages/test.md
