@@ -1,5 +1,5 @@
 ---
-tags: '1'
+tags: '2'
 test: test tags
 
 ---
