@@ -24,4 +24,5 @@ fields:
   label: tags
 pages:
 - pages/fool.md.md
+- pages/test-tags.md
 - pages/test.md
